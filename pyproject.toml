@@ -1,0 +1,36 @@
+[tool.poetry]
+name = "eve-console-jump"
+version = "0.0.1"
+description = "Easily connect to eve-ng console ports from terminal"
+license = "MIT"
+authors = ["xv0x7c0 <13061441+xv0x7c0@users.noreply.github.com>"]
+readme = "README.md"
+repository = "https://github.com/xv0x7c0/eve-console-jump"
+
+keywords = [
+  "eve-ng", 
+  "network", 
+  "router",
+  "cisco",
+  "console"
+]
+
+classifiers = [
+  "Topic :: System :: Networking",
+  "Programming Language :: Python :: 3 :: Only"
+]
+
+[tool.poetry.scripts]
+eve-console-jump = "eve_console_jump.command_line:main"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+mysql-connector-python = "^8.0.18"
+
+[tool.poetry.dev-dependencies]
+black = "^19.10b0"
+pylint = "^2.4.4"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"

@@ -28,7 +28,7 @@ python = "^3.8"
 mysql-connector-python = "^8.0.18"
 
 [tool.poetry.dev-dependencies]
-black = "^19.10b0"
+black = "^24.3"
 pylint = "^2.4.4"
 
 [build-system]
